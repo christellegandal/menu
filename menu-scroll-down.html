@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--<link rel="stylesheet"  href="C:\Users\utilisateur\Documents\exercicesJS\assets\stylesheet\cssmenu.css">-->
+    <link rel="stylesheet" href="C:\Users\utilisateur\Documents\exercicesJS\navbar fixed\style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+</head>
+  <body style="background-color: gray; font-family: 'Roboto', sans-serif;">
+  <nav id="menu">
+    <ul style="text-align: center;">
+      <li style="display: inline-block;">Accueil</li>
+      <li style="display: inline-block;">Produit</li>
+      <li style="display: inline-block;">Equipe</li>
+      <li style="display: inline-block;">Contact</li>
+    </ul>
+  </nav>
+  <div class="banner">
+    <h1 style="margin-top: 350px; text-align: center; color: white; font-family: 'Roboto', sans-serif;">Créez un menu qui se fixe en haut de la page lorsqu'on scroll-down
+    <br>(voir menu-scroll-down.html)
+    </h1>
+    <img src="C:\Users\utilisateur\Documents\exercicesJS\navbar fixed\image\image0.jpg"><br/>
+    <img src="C:\Users\utilisateur\Documents\exercicesJS\navbar fixed\image\image1.jpg"><br/>
+    <img src="C:\Users\utilisateur\Documents\exercicesJS\navbar fixed\image\image2.jpg"><br/>
+  </div>
+    <script>
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 100) {
+            $("nav").addClass("active");
+        } else {
+            $("nav").removeClass("active");
+        }
+    });    </script>
+  </body>
+</html>
